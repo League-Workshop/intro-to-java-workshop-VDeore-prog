@@ -9,7 +9,7 @@ import org.jointheleague.graphical.robot.Robot;
 
 public class StarShow {
 	
-	Robot robot = new Robot("batman");
+	Robot r2d2 = new Robot("batman");
 	
 	void makeStars() {
 		
@@ -46,13 +46,13 @@ public class StarShow {
 
 	private void drawStar(int starSize) {
 		// 2. Put the robot's pen down
-
+r2d2.penDown();
 		// 4. Repeat both commands 5 times. See Figure 1 at http://bit.ly/star-show
-
+for(int i=0;i<5;i++) {
 			// 1. Move the robot the distance of the starSize variable
-	
+	r2d2.move(starSize);
 			// 3. Turn the robot 144 degrees
-			
+	r2d2.turn(144);}
 	}
 	
 	public static void main(String[] args) {
